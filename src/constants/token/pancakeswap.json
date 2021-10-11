@@ -1,0 +1,30 @@
+{
+  "name": "PancakeSwap Default List",
+  "timestamp": "2021-03-17T09:56:23Z",
+  "version": {
+    "major": 2,
+    "minor": 10,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://exchange.pancakeswap.finance/images/pancakeswap.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "PancakeSwap ss",
+      "symbol": "ss",
+      "address": "0xd97cfa4ec46d4f595c4a8004af5fff5817023e11",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": ""
+    },
+    {
+      "name": "PancakeSwap tt",
+      "symbol": "tt",
+      "address": "0x755a3ce133abeec6740e0f89a4db3d68ee4af3be",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": ""
+    }
+  ]
+}
