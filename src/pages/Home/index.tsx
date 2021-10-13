@@ -23,7 +23,7 @@ const BorderedImg = styled.img<any>`
   border: 1px solid rgba(133, 133, 133, 0.15);
 `
 const SwiperImg = styled.img<any>`
-  height: 160px;
+  height: auto;
 `
 
 const colors = [
@@ -46,16 +46,14 @@ const colors = [
 
 const items = colors.map(({ id, title, imgUrl }) => (
   <Swiper.Item key={id}>
-    <SwiperImg src={imgUrl} alt={title} height={160} width="100%" />
+    <SwiperImg src={imgUrl} alt={title} width="100%" />
   </Swiper.Item>
 ))
 
 export default function Pool() {
   return (
     <HomeWrapper>
-      <Swiper autoplay style={{ height: '160px' }}>
-        {items}
-      </Swiper>
+      <Swiper autoplay>{items}</Swiper>
       <div style={{ padding: '0 16px' }}>
         <Card>
           <Text mb="16px" textAlign="center">
