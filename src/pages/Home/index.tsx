@@ -18,6 +18,9 @@ const HomeWrapper = styled.div`
   .adm-card {
     margin-bottom: 24px;
   }
+  .adm-grid {
+    text-align: center;
+  }
 `
 const BorderedImg = styled.img<any>`
   border: 1px solid rgba(133, 133, 133, 0.15);

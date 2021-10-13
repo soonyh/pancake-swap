@@ -15,12 +15,7 @@ import { CAKE } from '../../constants'
 const UikitMenuWrapper = styled.div<any>`
   width: 100%;
 
-  ${({ pathname }) =>
-    pathname === '/home'
-      ? `background-color: #21130a;
-  height: 100vh;
-  width: 100%;`
-      : ''}
+  ${({ pathname }) => (pathname === '/home' ? `background-color: #21130a;` : '')}
 
   ${({ pathname }) =>
     pathname === '/home'
