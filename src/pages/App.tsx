@@ -129,7 +129,7 @@ export default function App() {
   return (
     <Suspense fallback={null}>
       <HashRouter>
-        <AppWrapper>
+        <AppWrapper id="appWrapper">
           <LanguageContext.Provider
             value={{
               selectedLanguage,
@@ -141,7 +141,7 @@ export default function App() {
             <Footer />
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <Menu>
-                <BodyWrapper>
+                <BodyWrapper id="bodywrapper">
                   <Popups />
                   <Web3ReactManager>
                     <Switch>
