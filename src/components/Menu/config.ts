@@ -2,24 +2,29 @@ import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'Home',
+    label: 'FAQ',
     icon: 'HomeIcon',
     href: '/',
   },
   {
-    label: 'Trade',
+    label: 'Bug Bounty program',
     icon: 'TradeIcon',
     initialOpenState: true,
     items: [
       {
-        label: 'Exchange',
+        label: 'Apply for liquidity incentive',
         href: '/swap',
       },
       {
-        label: 'Liquidity',
+        label: 'MDX Ecological Fund application',
         href: '/pool',
       },
     ],
+  },
+  {
+    label: 'Notice',
+    icon: 'HomeIcon',
+    href: '/',
   },
 ]
 

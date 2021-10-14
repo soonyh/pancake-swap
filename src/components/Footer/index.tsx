@@ -1,14 +1,8 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { TabBar } from 'antd-mobile'
 import { withRouter } from 'react-router-dom'
-import { AppOutline, MessageOutline, MessageFill, UnorderedListOutline, UserOutline } from 'antd-mobile-icons'
-
-interface PageHeaderProps {
-  title: ReactNode
-  description?: ReactNode
-  children?: ReactNode
-}
+import { AppOutline, HandPayCircleOutline, ShopbagOutline, GiftOutline, MoreOutline } from 'antd-mobile-icons'
 
 const FooterWrapper = styled.div`
   position: fixed;
@@ -29,19 +23,23 @@ const tabs = [
   {
     key: 'swap',
     title: 'Convert',
-    icon: <UnorderedListOutline />,
+    icon: <ShopbagOutline />,
     badge: '5',
   },
   {
-    key: 'pool',
+    key: 'earn',
     title: 'Earn',
-    icon: (active: boolean) => (active ? <MessageFill /> : <MessageOutline />),
+    icon: <HandPayCircleOutline />,
     badge: '99+',
   },
   {
-    key: 'personalCenter',
-    title: 'Nft',
-    icon: <UserOutline />,
+    key: 'nft',
+    title: 'NFT',
+    icon: <GiftOutline />,
+  },
+  {
+    key: 'more',
+    icon: <MoreOutline />,
   },
 ]
 
