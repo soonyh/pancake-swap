@@ -43,7 +43,7 @@ const BorderedImg = styled.img<any>`
   border: 1px solid rgba(133, 133, 133, 0.15);
 `
 const SwiperImg = styled.img<any>`
-  height: auto;
+  min-height: 170px;
 `
 
 const TableWrapper = styled.table`
@@ -88,14 +88,16 @@ const colors = [
 
 const items = colors.map(({ id, title, imgUrl }) => (
   <Swiper.Item key={id}>
-    <SwiperImg src={imgUrl} alt={title} width="100%" />
+    <SwiperImg src={imgUrl} alt={title} />
   </Swiper.Item>
 ))
 
 export default function Pool() {
   return (
     <HomeWrapper>
-      <Swiper autoplay>{items}</Swiper>
+      <Swiper autoplay allowTouchMove>
+        {items}
+      </Swiper>
       <div style={{ padding: '0 16px' }}>
         <Card>
           <Text textAlign="center" color="#1f1d1e" textTransform="capitalize">

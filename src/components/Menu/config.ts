@@ -2,13 +2,13 @@ import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'FAQ',
-    icon: 'HomeIcon',
+    label: 'Notice',
+    icon: 'TicketIcon',
     href: '/',
   },
   {
     label: 'Bug Bounty program',
-    icon: 'TradeIcon',
+    icon: 'IfoIcon',
     initialOpenState: true,
     items: [
       {
@@ -22,8 +22,8 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Notice',
-    icon: 'HomeIcon',
+    label: 'FAQ',
+    icon: 'GroupsIcon',
     href: '/',
   },
 ]
