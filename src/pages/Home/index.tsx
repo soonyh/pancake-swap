@@ -25,6 +25,7 @@ const HomeWrapper = styled.div`
   }
   .adm-swiper-slide {
     -webkit-mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000 50%, #000 75%);
+    text-align: center;
   }
   .adm-page-indicator-dot {
     border: 2px solid #8f80ba;
