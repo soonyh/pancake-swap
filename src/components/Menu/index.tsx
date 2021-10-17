@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu } from '@pancakeswap-libs/uikit'
+// import { Menu as UikitMenu } from '@pancakeswap-libs/uikit'
 import styled from 'styled-components'
 import { withRouter } from 'react-router-dom'
 import { useWeb3React } from '@web3-react/core'
@@ -11,6 +11,7 @@ import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
 import links from './config'
 import { CAKE } from '../../constants'
+import UikitMenu from './Menu'
 
 const UikitMenuWrapper = styled.div<any>`
   width: 100%;

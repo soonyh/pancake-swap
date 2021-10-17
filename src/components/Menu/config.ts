@@ -1,14 +1,19 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
+export const MENU_HEIGHT = 64
+export const MENU_ENTRY_HEIGHT = 48
+export const SIDEBAR_WIDTH_FULL = 240
+export const SIDEBAR_WIDTH_REDUCED = 56
+
 const config: MenuEntry[] = [
   {
     label: 'Notice',
-    icon: 'TicketIcon',
+    icon: 'notice',
     href: '/',
   },
   {
     label: 'Bug Bounty program',
-    icon: 'IfoIcon',
+    icon: 'bounty',
     initialOpenState: true,
     items: [
       {
@@ -23,7 +28,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'FAQ',
-    icon: 'GroupsIcon',
+    icon: 'faq',
     href: '/',
   },
 ]

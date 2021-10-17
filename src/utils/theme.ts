@@ -1,4 +1,12 @@
+import get from 'lodash/get'
+import { DefaultTheme } from 'styled-components'
+
 const CACHE_KEY = 'IS_DARK'
+
+const getThemeValue = (path: string, fallback?: string | number) => (theme: DefaultTheme): string =>
+  get(theme, path, fallback)
+
+export default getThemeValue
 
 export function getThemeCache(): boolean | null {
   let cache = null
